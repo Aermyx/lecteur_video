@@ -10,5 +10,21 @@ img{
 
 .divBackground{
     width:100%;
-    position:absolute;
+    position: relative;;
+}
+
+.divNuages{
+    width:9%;
+}
+
+.nuage_01{
+    position: relative;
+}
+
+.divBlocs, .divCoins{
+    width:3%;
+}
+
+.divTuyau{
+    width:6%;
 }
