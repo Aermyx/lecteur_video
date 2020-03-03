@@ -4,9 +4,9 @@ html,body{
 };
 
 img{
-    height:100%;
+    width:100%;
 };
 
 .divBackground{
     width:100%;
-}
+};
