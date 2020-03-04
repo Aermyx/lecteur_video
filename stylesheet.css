@@ -21,10 +21,14 @@ img{
     position: relative;
 }
 
-.divBlocs, .divCoins{
+.divBlocs, .divCoins, .divStar{
     width:3%;
 }
 
-.divTuyau{
+.divTuyau, .divDrapeaux{
     width:6%;
+}
+
+.divPoteau{
+    width:4%;
 }
