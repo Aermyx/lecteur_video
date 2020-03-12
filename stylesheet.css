@@ -3,15 +3,14 @@ html, body{
     width:100%;
     margin:0;
     position: relative;
-}
-
-img{
-    width:100%;
+    overflow:hidden;
 }
 
 .wrapper{
+    width:100%;
     max-width:1920px;
-    max-height:100vh;
+    height:100%;
+    max-height:calc(100vh - 100px);
     position: absolute;
     top:0;
     left:0;
@@ -19,8 +18,14 @@ img{
 
 .divBackground{
     width:100%;
+    max-width:1920px;
+    height:100%;
+    max-height:calc(100vh - 100px);
 }
 
+img{
+    width:100%;
+}
  /*NUAGES*/
 
 .divNuages{
@@ -78,11 +83,9 @@ img{
 }
 
 .divVideo{
-    display:inline;
-    position:absolute;
+    position:relative;
     left:50%;
     top:50%;
-    
     width:20%;
     height:20%;
 }
