@@ -3,7 +3,10 @@ html, body{
     width:100%;
     margin:0;
     position: relative;
-    overflow:hidden;
+}
+
+img{
+    width:100%;
 }
 
 .wrapper{
@@ -22,25 +25,21 @@ html, body{
     max-height:100vh;
 }
 
-.divBackground img{
+.divBackground>img{
     width:100%;
     max-height:100vh;
 }
 
-
-
- /*NUAGES*/
-
 .divNuages{
     width:100%;
-    height:25%;
+    height:15%;
     position:absolute;
     top:0;
     left:0;
 }
 
 .nuage_01{
-    width:9%;
+    width:90px;
     position:absolute;
     top:75%;
     left:15%;
@@ -77,18 +76,43 @@ html, body{
 
 .divBlocs{
     width:15%;
-    display:flex;
+    height:19%;
+    position:absolute;
+    top:20%;
+    left:10%;
+}
 
+.etage2{
+    display:flex;
+}
+
+.etage1{
+    display:flex;
+    justify-content:center;
+    margin-bottom:50%;
 }
 
 .divBlocs img{
     width:20%;
 }
 
+.divCoins{
+    display:flex;
+    justify-content:space-between;
+    width:13%;
+    position:absolute;
+    top:35%;
+    left:30%;
+}
+
+.divCoins img{
+    width:19%;
+}
+
 .divVideo{
-    position:relative;
+    position:absolute;
     left:50%;
     top:50%;
-    width:20%;
-    height:20%;
+    transform: translate(-50%,-50%);
+    display:none;
 }
