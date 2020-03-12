@@ -13,6 +13,8 @@ img{
     max-width:1920px;
     max-height:100vh;
     position: absolute;
+    top:0;
+    left:0;
 }
 
 .divBackground{
@@ -53,9 +55,7 @@ img{
     transform:translate(-50%,-50%);
 }
 
-
-
-.divBlocs, .divCoins, .divStar{
+.divCoins, .divStar{
     width:3%;
 }
 
@@ -65,4 +65,24 @@ img{
 
 .divPoteau{
     width:4%;
+}
+
+.divBlocs{
+    width:15%;
+    display:flex;
+
+}
+
+.divBlocs img{
+    width:20%;
+}
+
+.divVideo{
+    display:inline;
+    position:absolute;
+    left:50%;
+    top:50%;
+    
+    width:20%;
+    height:20%;
 }
