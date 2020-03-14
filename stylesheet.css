@@ -3,6 +3,7 @@ html, body{
     width:100%;
     margin:0;
     position: relative;
+    overflow:hidden;
 }
 
 img{
@@ -16,6 +17,7 @@ img{
     position: absolute;
     top:0;
     left:0;
+    overflow:hidden;
 }
 
 .divBackground{
@@ -45,22 +47,42 @@ img{
     top:75%;
     left:15%;
     transform:translate(-50%,-50%);
+    transform-origin:100% 0%;
+    animation:nuage01 linear 30s infinite;
+}
+
+@keyframes nuage{
+    0%{transform:translateX(-300%);}
+    100%{transform:translateX(100vw)}
 }
 
 .nuage_02{
     width:9%;
     position: absolute;
     top:100%;
-    left:90%;
+    left:-9%;
     transform:translate(-50%,-50%);
+    transform-origin:100% 0%;
+    animation:nuage02 linear 20s infinite ;
+}
+
+@keyframes nuage{
+    to{left:109%}
 }
 
 .nuage_03{
     width:14%;
     position:absolute;
-    left:50%;
+    right:100%;
     top:50%;
     transform:translate(-50%,-50%);
+    transform-origin:100% 0%;
+    animation:nuage linear 40s infinite 3s;
+}
+
+@keyframes nuage03{
+    0%{transform:translateX(0vw);}
+    100%{transform:translateX(100vw)}
 }
 
 /*Blocks*/
@@ -139,7 +161,7 @@ img{
 .divDrapeaux{
     width:6%;
     position:absolute;
-    top:2462%;
+    top:46%;
     left:87.2%;
 }
 
