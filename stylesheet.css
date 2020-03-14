@@ -110,11 +110,23 @@ img{
 .divCoins img{
     width:19%;
     transform:translateY(0);
+    opacity: 1;
     transition: transform 0.1s linear;
 }
 
 .divCoins img:hover{
     transform:translateY(-25%);
+}
+
+.animationCoin{
+    animation:animationCoin 0.3s linear forwards;
+}
+
+@keyframes animationCoin{
+    to{
+        transform:translateY(-50%) rotateY(360deg);
+        opacity: 0;
+    }
 }
 
 /*Video*/
@@ -130,6 +142,29 @@ img{
 .video{
     width:100%;
     box-shadow: 10px 10px 5px black;
+}
+
+/*Barre de Progression*/
+
+.divBarreProgression{
+    height:5%;
+    width:100%;
+    position:absolute;
+    bottom:3%;
+    padding:0 5%;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.barreProgression{
+    background-color: antiquewhite;
+    height:100%;
+}
+
+.progression{
+    background-color: cornflowerblue;
+    width:1%;
+    height:100%;
 }
 
 /*Tuyau*/
