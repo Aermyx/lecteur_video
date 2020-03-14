@@ -35,7 +35,7 @@ img{
 
 .divNuages{
     width:100%;
-    height:15%;
+    height:35%;
     position:absolute;
     top:0;
     left:0;
@@ -44,45 +44,32 @@ img{
 .nuage_01{
     width:9%;
     position:absolute;
-    top:75%;
-    left:15%;
-    transform:translate(-50%,-50%);
-    transform-origin:100% 0%;
-    animation:nuage01 linear 30s infinite;
-}
-
-@keyframes nuage{
-    0%{transform:translateX(-300%);}
-    100%{transform:translateX(100vw)}
+    top:50%;
+    left:100%;
+    animation:nuage linear 30s infinite 3s;
+    transform:translateY(-50%);
 }
 
 .nuage_02{
     width:9%;
     position: absolute;
-    top:100%;
-    left:-9%;
-    transform:translate(-50%,-50%);
-    transform-origin:100% 0%;
-    animation:nuage02 linear 20s infinite ;
-}
-
-@keyframes nuage{
-    to{left:109%}
+    top:75%;
+    left:100%;
+    animation:nuage linear 20s infinite 18s;
+    transform:translateY(-50%);
 }
 
 .nuage_03{
     width:14%;
     position:absolute;
-    right:100%;
-    top:50%;
-    transform:translate(-50%,-50%);
-    transform-origin:100% 0%;
-    animation:nuage linear 40s infinite 3s;
+    left:100%;
+    top:25%;
+    animation:nuage linear 40s infinite 10s;
+    transform:translateY(-50%);
 }
 
-@keyframes nuage03{
-    0%{transform:translateX(0vw);}
-    100%{transform:translateX(100vw)}
+@keyframes nuage{
+    to{left:-20%}
 }
 
 /*Blocks*/
