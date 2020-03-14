@@ -32,15 +32,33 @@ var coinAudio3 = new Audio('sounds/coins.mp3');
 
 coin1.addEventListener("click",function(){
     coinAudio1.play();
-    coin1.style.visibility = "hidden";
+    coin1.classList.add("animationCoin");
+});
+
+coinAudio1.addEventListener("ended",function(){
+    coin1.classList.remove("animationCoin");
 });
 
 coin2.addEventListener("click",function(){
     coinAudio2.play();
-    coin2.style.visibility = "hidden";
+    coin2.classList.add("animationCoin");
+});
+
+coinAudio2.addEventListener("ended",function(){
+    coin2.classList.remove("animationCoin");
 });
 
 coin3.addEventListener("click",function(){
     coinAudio3.play();
-    coin3.style.visibility = "hidden";
+    coin3.classList.add("animationCoin");
+});
+
+coinAudio3.addEventListener("ended",function(){
+    coin3.classList.remove("animationCoin");
+});
+
+var progression = document.querySelector(".progression");
+
+video.addEventListener('timeupdate', function(){
+  progression.style.width = video.currentTime*100/video.duration + "%";
 });
