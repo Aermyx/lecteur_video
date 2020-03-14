@@ -109,6 +109,12 @@ img{
 
 .divCoins img{
     width:19%;
+    transform:translateY(0);
+    transition: transform 0.1s linear;
+}
+
+.divCoins img:hover{
+    transform:translateY(-25%);
 }
 
 /*Video*/
@@ -123,6 +129,7 @@ img{
 
 .video{
     width:100%;
+    box-shadow: 10px 10px 5px black;
 }
 
 /*Tuyau*/
