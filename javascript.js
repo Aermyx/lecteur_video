@@ -21,3 +21,11 @@ btnStop.addEventListener("click",function(){
     btnPlay.src = "https://imgur.com/H4GywUm.png";
     btnPause.src = "https://imgur.com/C1zPEYA.png";
 });
+
+var coin = document.querySelector(".coin");
+var coinAudio = new Audio('coins.mp3');
+
+coin.addEventListener("click",function(){
+    coinAudio.play();
+    coin.style.display = none;
+});
