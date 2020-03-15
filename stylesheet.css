@@ -176,6 +176,16 @@ img{
     width:6%;
 }
 
+.tuyau{
+    transform-origin:50% 100%;
+    transform: scaleY(1);
+    transition: transform 0.2s ease-in;
+}
+
+.transitionTuyau{
+    transform:scaleY(0.9);
+}
+
 /* Poteau */
 
 .divPoteau{
@@ -203,5 +213,51 @@ img{
 .divStar{
     width:3%;
     position:absolute;
-    top:0%;
+    top:75%;
+    left:61.7%;
+}
+
+.animationStar{
+    animation: animationStar 5s linear;
+}
+
+@keyframes animationStar{
+    0%{
+        top:75%;
+        left:61.7%;
+    }
+    8%{
+        top:64.3%;
+        left:61.7%;
+    }
+    15%{
+        top:55%;
+        left:58%;
+        animation-timing-function: ease-in;
+    }
+    30%{
+        top:83.7%;
+        animation-timing-function: ease-out;
+    }
+    45%{
+        top:65%;
+        animation-timing-function: ease-in;
+    }
+    60%{
+        top:83.7%;
+        animation-timing-function: ease-out;
+    }
+    75%{
+        top:65%;
+        animation-timing-function: ease-in;
+    }
+    90%{
+        top:83.7%;
+        animation-timing-function: ease-out;
+    }
+    100%{
+        top:65%;
+        left:-5%;
+        animation-timing-function: ease-in;
+    }
 }
