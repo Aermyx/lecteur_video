@@ -1,3 +1,6 @@
+
+// BOUTON PLAY PAUSE STOP
+
 var video = document.querySelector(".video");
 var btnPlay = document.querySelector(".play_block");
 var btnPause = document.querySelector(".pause_block");
@@ -22,6 +25,9 @@ btnStop.addEventListener("click",function(){
     btnPlay.src = "https://imgur.com/H4GywUm.png";
     btnPause.src = "https://imgur.com/C1zPEYA.png";
 });
+
+
+// COINS
 
 var coin1 = document.querySelector(".coin_01");
 var coin2 = document.querySelector(".coin_02");
@@ -57,8 +63,30 @@ coinAudio3.addEventListener("ended",function(){
     coin3.classList.remove("animationCoin");
 });
 
+
+// BARRE DE PROGRESSION
+
 var progression = document.querySelector(".progression");
 
 video.addEventListener('timeupdate', function(){
   progression.style.width = video.currentTime*100/video.duration + "%";
+});
+
+
+// ÉVÈNEMENT DE FIN
+
+var tuyau = document.querySelector(".tuyau");
+var star = document.querySelector(".divStar");
+
+video.addEventListener("ended",function(){
+    tuyau.classList.add("transitionTuyau");
+    star.classList.add("animationStar");
+});
+
+tuyau.addEventListener("transitionend",function(){
+    tuyau.classList.remove("transitionTuyau");
+});
+
+star.addEventListener("animationend",function(){
+    star.classList.remove("animationStar");
 });
