@@ -81,6 +81,9 @@ var star = document.querySelector(".divStar");
 video.addEventListener("ended",function(){
     tuyau.classList.add("transitionTuyau");
     star.classList.add("animationStar");
+    btnPlay.src = "https://imgur.com/H4GywUm.png";
+    btnPause.src = "https://imgur.com/C1zPEYA.png";
+    btnStop.src="https://imgur.com/C1zPEYA.png";
 });
 
 tuyau.addEventListener("transitionend",function(){
