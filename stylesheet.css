@@ -195,6 +195,14 @@ img{
     left:85%;
 }
 
+.sliderVolume{
+    height:100%;
+    width:100%;
+    position:absolute;
+    -webkit-appearance: none;
+    
+}
+
 /*Drapeau*/
 
 .divDrapeaux{
