@@ -195,12 +195,26 @@ img{
     left:85%;
 }
 
+/* Slider */
+
+.divSlider{
+    width:17%;
+    height:12%;
+    position:absolute;
+    top:58%;
+    left:81.5%;
+    transform:rotate(-90deg);
+}
+
 .sliderVolume{
     height:100%;
     width:100%;
-    position:absolute;
     -webkit-appearance: none;
-    
+}
+
+.sliderVolume::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: url("https://imgur.com/qTuJmw5.png");
 }
 
 /*Drapeau*/
@@ -214,6 +228,7 @@ img{
 
 .divDrapeaux img{
     position:absolute;
+    visibility: hidden;
 }
 
 /*Star*/
