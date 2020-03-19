@@ -213,8 +213,10 @@ img{
 }
 
 .sliderVolume::-webkit-slider-thumb{
+    height:20px;
     -webkit-appearance: none;
     background: url("https://imgur.com/qTuJmw5.png");
+    transform:rotate(90deg);
 }
 
 /*Drapeau*/
