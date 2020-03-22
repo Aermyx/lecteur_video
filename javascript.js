@@ -93,3 +93,12 @@ tuyau.addEventListener("transitionend",function(){
 star.addEventListener("animationend",function(){
     star.classList.remove("animationStar");
 });
+
+
+// VOLUME
+
+var slider = document.querySelector(".sliderVolume");
+
+slider.addEventListener("input",function(){
+    video.volume = slider.value/100;
+});
