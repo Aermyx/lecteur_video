@@ -198,24 +198,36 @@ img{
 /* Slider */
 
 .divSlider{
-    width:17%;
+    width:27%;
     height:12%;
     position:absolute;
     top:58%;
-    left:81.5%;
+    left:80.5%;
     transform:rotate(-90deg);
+}
+
+.sliderVolume:focus{
+    outline:none;
 }
 
 .sliderVolume{
     height:100%;
     width:100%;
     -webkit-appearance: none;
+    background-color:rgba(0,0,0,0);
+}
+
+.sliderVolume::-webkit-slider-runnable-track{
+	height:100%;
 }
 
 .sliderVolume::-webkit-slider-thumb{
-    height:20px;
+    height:90%;
+    width:50%;
     -webkit-appearance: none;
-    background: url("https://imgur.com/qTuJmw5.png");
+    background-image: url("https://imgur.com/qTuJmw5.png");
+    background-size: contain;
+	background-repeat:no-repeat;
     transform:rotate(90deg);
 }
 
