@@ -24,6 +24,7 @@ btnStop.addEventListener("click",function(){
     video.pause();
     btnPlay.src = "https://imgur.com/H4GywUm.png";
     btnPause.src = "https://imgur.com/C1zPEYA.png";
+    btnStop.src = "https://imgur.com/C1zPEYA.png";
 });
 
 
